@@ -50,3 +50,52 @@ Para utilizar o GW4E, é necessário que os seguintes components estejam previam
  # Gerando Modelos no GW4E
  - Para iniciar um projeto GW4E, vá até a opção *Window>Perspective>Open Perspective>Other* e selecione a opçao GW4E Perspective;
  - Clique em *File>New>GW4E Project*;
+ - Dê um nome ao seu projeto e clique em next;
+ - Clique em *Next* novamente;
+ - Selecione o tipo de modelo desejado (Modelo vazio, modelo simples, scripted model, e modelos compartilhados);
+ - Clique em *Next*;
+ - Em seguida em *Finish*;
+ 
+ # Utilizando o GW4E
+
+ A base para criar modelos é bastante intuitiva: 
+ - O círculo verde indica um evento de início;
+ - Os retângulos azuis, chamados de *vertex* indicam estados do programa;
+ - As linhas, chamadas de *edges* indicam ações, que servirão de transição entre os estados do programa em teste;
+ 
+ Cada objeto gráfico permite que seja adicionado uma descrição, bem como propriedades que podem ser atribuídas pelo usuário. Para fazer isto, basta clicar no objeto, e selecionar a aba *Properties*, próximo do terminal do EClipse IDE, onde os campos de nome, descrição/propriedade e serão apresentado. 
+ 
+ Para adicionar um elemento, basta arrastá-lo até o dashboard, e nomeá-lo.
+ 
+ # Gerando testes JUnit com o GW4E
+ 
+ Para converter os modelos em testes JUnit:
+ - Clique com o botão direito do mouse sobre o projeto, e selecione a opção *GW4E*, e *Convert To* em seguida;
+ - Em seguida escolha a opção *Java Test Based*, e clique em *Next*;
+ - Selecione *GraphicWalker Class Based Test*, e em seguida, na opção abaixo, que irá definir o elemento de início do teste;
+ - Clique em *Next*, e em seguida, selecione o tipo de teste JUnit desejado(Smoke Test, Functionality Test, Stability Test);
+ - Após clicar em *Next*, clique em *Finish*, e o arquivo JUnit será gerado. 
+ 
+ Cada *vertex* e *edge* serão criados, e o usuário poderá adicionar em cada um os atributos necessários, bem como a parte dos testes que foram escolhidos na hora de fazer a conversão. 
+ 
+ Para executá-lo, basta selecionar a opção *Run As*, e clicar a opção *JUnit test*.
+ 
+ # Gerando testes manuais com o GW4E
+ 
+ Para gerar e exportar arquivos de testes manuais:
+ - Selecione a opção ao lado do botão *Run* no topo do Eclipse IDE;
+ - Selecione a opção *Run configurations*;
+ - Na aba de opções à esquerda, selecione a opção *GraphicWalker Manual Test Launcher*, e clique no ícone "New", logo acima da lista;
+ - Clique no botão *Browse*, na opção Project, e selecione o projeto atual;
+ - Clique no botão *Browse*, na opção GraphModel, e selecione o projeto atual;
+ - Na opção *Path Generator*, selecion a primeira opção *(random(edge_coverage(100)))*;
+ - Clique em *Apply*, e depois em *Run*;
+ - Após a abertura do assistente, clique em *Next*;
+ - Os passos do modelo serão apresentados, e logo abaixo da descrição as opções de falhar o passo aparecerão, podendo ser selecionadas ou não;
+ - Clique em *Next* até que a página de Resumo da Execução apareça; 
+ - Clique em *Next* mais uma vez;
+ - Selecione a opção *Export as a Test Template*;
+ - Selecione a segunda caixa de texto e escreva um nome para o arquivo, no formato *meuArquivo.xlsx*;
+ - Escreva um título logo abaixo, e em seguida, insira o Id do teste;
+ - Insira abaixo um nome de component, e defina a prioridade do caso de teste, clicando em *Finish* logo após. 
+ - Um arquivo .xlsx será gerado, contendo toda a execução do caso de teste manual. 
