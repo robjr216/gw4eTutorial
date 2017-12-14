@@ -1,5 +1,8 @@
 # gw4eTutorial
 Projeto desenvolvido para a cadeira de Testes de Validação(IF1009)
+Equipe: Robson Jr.
+        Ricardo Rodrigues
+        Sidney Felipe
 
 GW4E é uma ferramente open source para testes baseados em modelo, mais conhecidos como MBT(Model Based Tests). Além das funcionalidades essenciais do Graphicwalker, o GW4E permite que outras funcionalidades sejam utilizadas, diretamente no Eclipse.  
 
